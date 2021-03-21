@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Card from '../Card/Card';
 import Fade from 'react-reveal/Fade';
 import Button from '@material-ui/core/Button';
