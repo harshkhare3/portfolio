@@ -13,6 +13,10 @@
   }
 }
 
+.herosection__typed {
+  color: #01BF71;
+}
+
 .heroSection__particles {
   height: 100%;
 }
@@ -97,6 +101,7 @@
   border: none;
   align-items: center;
   cursor: pointer;
+  text-decoration: none !important;
   transition: all 0.2s ease-in-out;
 
   &:hover {

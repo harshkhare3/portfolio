@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 930px) {
+    margin-top: -10px;
     flex-direction: column;
   }
 }
@@ -30,18 +31,22 @@
   display: flex;
   justify-content: center;
   align-items: center;  
+
+  @media screen and (max-width: 768px) {
+    margin-top: -1rem;
+  }
 }
 
 .bio__dp {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   margin-top: 2rem;
   object-fit: contain;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 930px) {
     margin-top: 0;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
   }
 }
 
@@ -49,15 +54,21 @@
   display: flex;
   flex-direction: column;
   margin-left: 6rem;
+  justify-content: center;
+  margin-top: 5rem;
+  line-height: 1.5;
 
   @media screen and (max-width: 930px) {
-    margin-top: 1.5rem;
     align-items: center;
     margin-left: 0;
+    margin-top: 0;
+    line-height: normal;
   }
 
   @media screen and (max-width: 768px) {
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: normal;
   }
 }
 
@@ -67,6 +78,7 @@
 
 .bio__content > p{
   padding: 1rem 0;
+  
 }
 
 .bio__details {
@@ -79,4 +91,32 @@
 
 .bio__rightSection {
   margin-left: 2rem;
+}
+
+.bio__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 50px;
+  background: #01BF71;
+  white-space: nowrap;
+  outline: none;
+  padding: 14px 48px;
+  color: #010606;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  max-width: 300px;
+  text-decoration: none !important;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+  }
+}
+
+.bio__buttonIcon {
+  margin-left: 8px;
+  font-size: 20px;
 }

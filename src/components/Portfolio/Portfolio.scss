@@ -1,0 +1,39 @@
+.portfolio {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(180, 71%, 1%);
+  color: #fff;
+  @media screen and (max-width: 850px) {
+    height: 100% !important;
+  }
+}
+
+.portfolio__height {
+  height: 100vh;
+}
+
+.portfolio__button {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.portfolio__row {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio__button > button {
+  margin-right: 20px;
+}
+
+.portfolio__buttonActive > button {
+  background-color: #01BF71;
+}

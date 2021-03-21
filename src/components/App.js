@@ -6,6 +6,7 @@ import './App.scss';
 import Sidebar from './Sidebar/Sidebar';
 import HeroSection from './HeroSection/HeroSection';
 import Bio from './Bio/Bio';
+import Portfolio from './Portfolio/Portfolio';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,6 +22,7 @@ function App() {
         <Header toggle={toggle}/>
         <HeroSection />
         <Bio />
+        <Portfolio />
       </div>
     </Router>
   )

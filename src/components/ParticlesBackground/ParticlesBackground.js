@@ -11,20 +11,20 @@ const ParticlesBackground = () => {
             value: 130,
             density: {
               enable: true,
-              value_area: 2000
+              value_area: 1500
             }
           },
           color: {
-            value: "#ffffff"
+            value: "#fff"
           },
           shape: {
             type: "circle",
             stroke: {
-              width: 4,
+              width: 5,
               color: "#01BF71"
             },
             polygon: {
-              nb_sides: 4
+              nb_sides: 5
             },
             image: {
               src: "img/github.svg",

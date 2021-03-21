@@ -46,10 +46,9 @@
 .sidebar__link {
   margin: 30px 0;
   font-size: 1.6rem;
-  text-decoration: none;
+  text-decoration: none !important;
   list-style: none;
   transition: 0.2s ease-in-out;
-  text-decoration: none;
   color: #fff;
   cursor: pointer;
 

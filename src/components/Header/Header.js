@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import LinkScroll from '../LinkScroll/LinkScroll';
-
 import './Header.scss';
 
 function Header(props) {
@@ -41,9 +40,6 @@ function Header(props) {
         <ul className="header__navMenu">
           <li className="header__navItem">
             <LinkScroll to="about" name="About" />
-          </li>
-          <li className="header__navItem">
-            <LinkScroll to="discover" name="Discover" />
           </li>
           <li className="header__navItem">
             <LinkScroll to="portfolio" name="Portfolio" />
