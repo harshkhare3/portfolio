@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
 import Fade from 'react-reveal/Fade';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Bio = () => {
   return (
@@ -20,9 +20,21 @@ const Bio = () => {
           <div className="bio__image">
             <img src={DP} alt="Profile Pic" className="bio__dp"/>
             <div className="bio__social">
-              <Link className="bio__socialIcons"><FaGithub /></Link>
-              <Link className="bio__socialIcons"><FaGithub /></Link>
-              <Link className="bio__socialIcons"><FaGithub /></Link>
+              <Link
+                onClick={() => window.open('https://github.com/harshkhare3', '_blank')}
+                className="bio__socialIcons">
+                  <FaGithub />
+              </Link>
+              <Link 
+                onClick={() => window.open('https://www.linkedin.com/in/harsh-khare-a150b6180/', '_blank')} 
+                className="bio__socialIcons">
+                  <FaLinkedin />
+              </Link>
+              <Link 
+                onClick={() => window.open('https://twitter.com/JoninHK', '_blank')}
+                className="bio__socialIcons">
+                  <FaTwitter />
+              </Link>
             </div>
           </div>
         </Fade>
