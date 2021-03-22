@@ -8,6 +8,10 @@
   @media screen and (max-width: 930px) {
     padding: 20px 0;
   }
+
+  @media screen and (max-width: 550px) {
+    height: 1000px;
+  }
 }
 
 .bio__heading {
@@ -32,8 +36,12 @@
 
 .bio__image {
   display: flex;
-  justify-content: center;
-  align-items: center;  
+  flex-direction: column;
+  padding-top: 5rem;
+
+  @media screen and (max-width: 930px) {
+    padding-top: 0;
+  }
 }
 
 .bio__dp {
@@ -43,7 +51,7 @@
   object-fit: contain;
 
   @media screen and (max-width: 930px) {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 300px;
     height: 300px;
   }
@@ -118,4 +126,21 @@
 .bio__buttonIcon {
   margin-left: 8px;
   font-size: 20px;
+}
+
+.bio__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.bio__socialIcons {
+  font-size: 30px;
+  color: #037FFF;
+  cursor: pointer;
+
+  &:not(:last-child){
+    margin-right: 5px;
+  }
 }

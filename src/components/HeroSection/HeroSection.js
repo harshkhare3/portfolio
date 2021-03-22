@@ -3,6 +3,8 @@ import Typed from 'react-typed';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { Link as LinkScroll } from 'react-scroll';
 import Particles from '../ParticlesBackground/ParticlesBackground';
+
+
 import './HeroSection.scss';
 
 const HeroSection = () => {

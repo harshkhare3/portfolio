@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
 import Fade from 'react-reveal/Fade';
+import { FaGithub } from 'react-icons/fa';
 
 const Bio = () => {
   return (
@@ -18,6 +19,11 @@ const Bio = () => {
         <Fade left>
           <div className="bio__image">
             <img src={DP} alt="Profile Pic" className="bio__dp"/>
+            <div className="bio__social">
+              <Link className="bio__socialIcons"><FaGithub /></Link>
+              <Link className="bio__socialIcons"><FaGithub /></Link>
+              <Link className="bio__socialIcons"><FaGithub /></Link>
+            </div>
           </div>
         </Fade>
 
