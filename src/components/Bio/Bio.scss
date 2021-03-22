@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   height: 900px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 930px) {
     padding: 20px 0;
   }
 }
@@ -34,10 +34,6 @@
   display: flex;
   justify-content: center;
   align-items: center;  
-
-  @media screen and (max-width: 768px) {
-    margin-top: -1rem;
-  }
 }
 
 .bio__dp {
@@ -48,8 +44,8 @@
 
   @media screen and (max-width: 930px) {
     margin-top: 15px;
-    width: 85%;
-    height: 85%;
+    width: 300px;
+    height: 300px;
   }
 }
 
