@@ -3,20 +3,19 @@ import DP from '../../images/dp.jfif';
 import { Link } from 'react-scroll';
 import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Bio = () => {
-  return (
-    
+  return ( 
     <div className="bio__container" id='about'>
-      <Fade top>
+      <Fade duration="2000">
         <div className="bio__heading">
           <h1>ABOUT ME</h1>
         </div>
       </Fade>
-      <div className="bio__about">
-        <Fade left>
+      <Fade duration="2000" cascade>
+        <div className="bio__about">
           <div className="bio__image">
             <img src={DP} alt="Profile Pic" className="bio__dp"/>
             <div className="bio__social">
@@ -37,9 +36,7 @@ const Bio = () => {
               </Link>
             </div>
           </div>
-        </Fade>
 
-        <Fade right>
           <div className="bio__content">
             <h4>My name is <span style={{ color: '#01BF71'}}>Harsh Khare</span></h4>
 
@@ -50,7 +47,7 @@ const Bio = () => {
               I am also proficient in Object Oriented Programming (C++) and <br />
               Algorithms & Data Structures.
             </p>
-            
+              
             <div className="bio__details">
               <div className="bio__leftSection">
                 <p>Full Name</p>
@@ -82,9 +79,8 @@ const Bio = () => {
               </Link>
             </div>  
           </div>
-        </Fade>
-      </div>
-
+        </div>
+      </Fade>
     </div>
   )
 }

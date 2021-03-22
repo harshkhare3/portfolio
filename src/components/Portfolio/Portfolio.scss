@@ -13,6 +13,12 @@
   }
 }
 
+.css-1gzxeik {
+  display: flex;
+  justify-content: center;
+}
+
+
 .portfolio__height {
   height: 100vh;
 }
@@ -23,12 +29,16 @@
 }
 
 .portfolio__row {
-  width: 80%;
   display: flex;
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
   transition: all 0.2s ease-in-out;
+}
+
+// This class comes from Fade effect
+.css-1gzxeik {
+  width: 80%;
 }
 
 .portfolio__button > button {
