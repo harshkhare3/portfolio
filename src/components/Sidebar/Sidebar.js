@@ -2,11 +2,10 @@ import React from 'react';
 import "./Sidebar.scss"
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkScroll } from 'react-scroll';
-import {motion} from 'framer-motion';
 
 const Sidebar = (props) => {
   return (
-    <motion.div 
+    <div 
       onClick={props.toggle}
       className={props.isOpen === true ? 'sidebar__container sidebar__show' 
       : 'sidebar__container'}
@@ -29,7 +28,7 @@ const Sidebar = (props) => {
           </li>
         </ul>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
