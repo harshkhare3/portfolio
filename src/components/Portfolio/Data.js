@@ -17,7 +17,8 @@ export const WebApp = [
         <li>Product adding and removing from the basket. </li>
         <li>Orders page to show previously placed orders.</li>
         <li>Fully functional stripe payment method integrated (currently running on test keys).</li>
-      </ul>`
+      </ul>`,
+      tech:`<p>Tech used - ReactJS, React Context API & Firebase Cloud Functions</p>`
     },
     {
       name: "Roster Project",

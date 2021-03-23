@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card as CardUi, Fade} from '@material-ui/core';
+import { Card as CardUi } from '@material-ui/core';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,11 +11,12 @@ import DOMPurify from 'dompurify';
 import ReactCardFlip from 'react-card-flip';
 
 
+
 import './Card.scss'
 
-const Card = ({ name, imageUrl, data, icons }) => {
+const Card = ({ name, imageUrl, data, tech }) => {
   var cleanData = DOMPurify.sanitize(data);
-  var cleanIcons = DOMPurify.sanitize(icons);
+
   const [open, setOpen] = useState(false);
 
   const handleFlip = () => {
@@ -32,9 +33,8 @@ const Card = ({ name, imageUrl, data, icons }) => {
               image={imageUrl}
               title="Contemplative Reptile"
             />
-            <CardContent>
-              {/* <h2>{name}</h2> */}
-              <span></span>
+            <CardContent className="card__frontContent">
+              <p dangerouslySetInnerHTML={{__html:tech}}></p>
             </CardContent>
           </CardActionArea>
           <CardActions>
@@ -48,7 +48,7 @@ const Card = ({ name, imageUrl, data, icons }) => {
         <CardUi className="card__container">
           <CardActionArea>
             <CardContent className="card__media scrollable">
-              <h2>Back Card Text</h2>
+              <h2>{name}</h2>
               <p dangerouslySetInnerHTML={{ __html : cleanData }}></p>
               <span></span>
             </CardContent>

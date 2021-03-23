@@ -17,7 +17,7 @@ const Portfolio = () => {
       setActive(false)
     }
     setProjectType(e);
-  }
+  }  
 
   return (
     <div id="portfolio" className={active? "portfolio portfolio__height" : "portfolio"}>
@@ -53,15 +53,30 @@ const Portfolio = () => {
           {
             projectType === 0 ? 
               WebApp.map((app) => (
-                <Card name={app.name} imageUrl={app.imageUrl} data={app.data} />
+                <Card
+                 name={app.name} 
+                 imageUrl={app.imageUrl} 
+                 data={app.data} 
+                 tech={app.tech}
+                />
               ))
             : projectType ===1 ?
               WebApp.filter(app => app.id === 1).map((app) => (
-                <Card name={app.name} imageUrl={app.imageUrl} data={app.data}/>
+                <Card
+                 name={app.name} 
+                 imageUrl={app.imageUrl} 
+                 data={app.data}
+                 tech={app.tech}
+                />
               ))
             :
               WebApp.filter(app => app.id === 2).map((app) => (
-                <Card name={app.name} imageUrl={app.imageUrl} data={app.data}/>
+                <Card 
+                 name={app.name} 
+                 imageUrl={app.imageUrl} 
+                 data={app.data}
+                 tech={app.tech}
+                />
               )) 
           }        
         </div>

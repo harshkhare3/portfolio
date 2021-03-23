@@ -21,6 +21,18 @@
 
 }
 
+.card__frontContent {
+  width: 400px;
+  @media screen and (max-width: 1350px) {
+    width: 350px;
+  }
+
+  @media screen and (max-width: 1075px) {
+    width: 300px;
+  }
+
+}
+
 .scrollable{
   @media screen and (max-width: 1350px) {
     overflow-y: scroll !important;
