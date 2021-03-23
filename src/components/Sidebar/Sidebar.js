@@ -21,10 +21,10 @@ const Sidebar = (props) => {
             <LinkScroll onClick={props.toggle} className="sidebar__link" to="about">About</LinkScroll>
           </li>
           <li className="sidebar__link">
-            <LinkScroll onClick={props.toggle} className="sidebar__link" to="services">Services</LinkScroll>
+            <LinkScroll onClick={props.toggle} className="sidebar__link" to="portfolio">Portfolio</LinkScroll>
           </li>
           <li className="sidebar__link">
-            <LinkScroll onClick={props.toggle} className="sidebar__link" to="portfolio">Portfolio</LinkScroll>
+            <LinkScroll onClick={props.toggle} className="sidebar__link" to="contact">Contact Me</LinkScroll>
           </li>
         </ul>
       </div>

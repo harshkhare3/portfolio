@@ -27,12 +27,12 @@ const Bio = () => {
               <Link 
                 onClick={() => window.open('https://www.linkedin.com/in/harsh-khare-a150b6180/', '_blank')} 
                 className="bio__socialIcons">
-                  <FaLinkedin />
+                  <FaLinkedin color="#0A66C2"/>
               </Link>
               <Link 
                 onClick={() => window.open('https://twitter.com/JoninHK', '_blank')}
                 className="bio__socialIcons">
-                  <FaTwitter />
+                  <FaTwitter color="#1DA1F2"/>
               </Link>
             </div>
           </div>
