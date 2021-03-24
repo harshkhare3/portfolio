@@ -18,30 +18,34 @@ export const WebApp = [
         <li>Orders page to show previously placed orders.</li>
         <li>Fully functional stripe payment method integrated (currently running on test keys).</li>
       </ul>`,
-      tech:`<p>Tech used - ReactJS, React Context API & Firebase Cloud Functions</p>`
+      tech:`<p>Tech Used - ReactJs, React Context API & Firebase Cloud Functions.</p>`
     },
     {
       name: "Roster Project",
       imageUrl: Roster,
       id: 1,
-      data: ''
+      data: '',
+      tech: `<p>Tech Used - JavaScript, VueJs, NodeJs & MySQL.</p>`
     },
     {
       name: "Alan AI ",
       imageUrl: Alan,
       id: 1,
-      data: ''
+      data: '',
+      tech: `<p>Tech Used - Alan AI Voice Assistant & ReactJs.</p>`
     },
     {
       name: "Zoom Flutter Clone",
       imageUrl: Zoom,
       id: 2,
-      data: ''
+      data: '',
+      tech: `<p>Tech Used - Flutter & Firebase.</p>`
     },
     {
       name: "Firebase CHat App",
       imageUrl: Zoom,
       id: 2,
-      data: ''
+      data: '',
+      tech: `<p>Tech Used - Flutter & Jitsi Meet.</p>`
     }
   ]

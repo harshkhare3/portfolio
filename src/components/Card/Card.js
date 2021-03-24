@@ -25,7 +25,7 @@ const Card = ({ name, imageUrl, data, tech }) => {
 
   return (
     <div>
-      <ReactCardFlip isFlipped={open} flipDirection="horizontal">
+      <ReactCardFlip flipSpeedFrontToBack="1.5" flipSpeedBackToFront="1.5" isFlipped={open} flipDirection="horizontal">
         <CardUi className="card__container">
           <CardActionArea>
             <CardMedia
