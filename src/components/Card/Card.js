@@ -31,7 +31,6 @@ const Card = ({ name, imageUrl, data, tech }) => {
             <CardMedia
               className="card__media"
               image={imageUrl}
-              title="Contemplative Reptile"
             />
             <CardContent className="card__frontContent">
               <p dangerouslySetInnerHTML={{__html:tech}}></p>
@@ -47,10 +46,9 @@ const Card = ({ name, imageUrl, data, tech }) => {
 
         <CardUi className="card__container">
           <CardActionArea>
-            <CardContent className="card__media scrollable">
+            <CardContent className="card__backContent scrollable">
               <h2>{name}</h2>
-              <p dangerouslySetInnerHTML={{ __html : cleanData }}></p>
-              <span></span>
+              <span dangerouslySetInnerHTML={{ __html : cleanData }}></span>
             </CardContent>
           </CardActionArea>
           <CardActions>

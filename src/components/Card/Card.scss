@@ -23,11 +23,31 @@
 
 }
 
+.card__backContent {
+  height: 340px;
+  width: 400px;
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 1350px) {
+    height: 290px;
+    width: 350px;
+  }
+
+  @media screen and (max-width: 1075px) {
+    height: 240px;
+    width: 300px;
+  }
+
+}
+
+.card__list {
+  padding: 10px !important;
+}
+
 .card__frontContent {
   width: 400px;
   font-weight: 520 !important;
   color: #010606 !important;
-  font-weight: 500;
 
   @media screen and (max-width: 1350px) {
     width: 350px;

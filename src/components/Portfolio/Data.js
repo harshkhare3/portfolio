@@ -13,7 +13,7 @@ export const WebApp = [
       data: `It is an Amazon Clone made using React and Firebase. Its frontend is done using React and React Context API, backend is done using Firebase cloud functions and the database used is Firebase Cloud Firestore.
       <br/><br/>
       Features:-<br/><br/>
-      <ul>
+      <ul class="card__list">
         <li>Authentication feature.</li>
         <li>Product adding and removing from the basket. </li>
         <li>Orders page to show previously placed orders.</li>
@@ -28,7 +28,7 @@ export const WebApp = [
       data: `It is a task/chore roster system for shared spaces that allows managers to set tasks, notifies users of their tasks, and allows users to mark tasks as complete.
       <br/><br/>
       Features:-<br/><br/>
-      <ul>
+      <ul class="card__list">
         <li>Authentication for managers and employees.</li>
         <li>Employees can view task, set email noti & mark a task as complete.</li>
         <li>Managers can easily set a roster acording to employees availability.</li>
@@ -43,7 +43,7 @@ export const WebApp = [
       data: `It is a COVID-19 Tracker App where you can easily track the number of people infected and recovered by COVID-19. <br/>
       All the data on this website comes from disease.sh API. <br/><br/>
       Features:-<br/><br/>
-      <ul>
+      <ul class="card__list">
         <li>Realtime data coming from disease.sh</li>
         <li>All the data is shown graphically, and on map according to the country.</li>
       </ul>
