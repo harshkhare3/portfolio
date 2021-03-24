@@ -2,8 +2,8 @@
   margin: 20px;
   border-radius: 15px !important;
   -webkit-box-shadow: 0px 1px 27px -3px rgba(255,255,255,1);
--moz-box-shadow: 0px 1px 27px -3px rgba(255,255,255,1);
-box-shadow: 0px 1px 27px -3px rgba(255,255,255,1) !important;
+  -moz-box-shadow: 0px 1px 27px -3px rgba(255,255,255,1);
+  box-shadow: 0px 1px 27px -3px rgba(255,255,255,1) !important;
 }
 
 .card__media {
@@ -25,6 +25,7 @@ box-shadow: 0px 1px 27px -3px rgba(255,255,255,1) !important;
 
 .card__frontContent {
   width: 400px;
+  font-weight: 520 !important;
   color: #010606 !important;
   font-weight: 500;
 
