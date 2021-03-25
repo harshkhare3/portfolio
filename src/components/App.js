@@ -21,8 +21,10 @@ function App() {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Header toggle={toggle}/>
         <HeroSection />
-        <Bio />
-        <Portfolio />
+        <div className="content">
+          <Bio />
+          <Portfolio />
+        </div>
       </div>
     </Router>
   )

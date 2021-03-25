@@ -5,10 +5,11 @@ import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
 import {Fade} from 'react-awesome-reveal';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import Skills from '../Skills/Skills';
 
 const Bio = () => {
-  return ( 
-    <div className="bio__container" id='about'>
+  return (       
+      <div className="bio__container" id='about'>
       <Fade duration="2000">
         <div className="bio__heading">
           <h1>ABOUT ME</h1>
@@ -81,6 +82,19 @@ const Bio = () => {
           </div>
         </div>
       </Fade>
+      <div className="bio__skills">
+        <h1>MY SKILLS</h1>
+        <div className="bio__skillsContainer">
+          <Skills skill={'Javascript'} progress={'60%'} width={'60%'} />
+          <Skills skill={'Typescript'} progress={'30%'} width={'30%'} />
+          <Skills skill={'React Js'} progress={'70%'} width={'70%'} />
+          <Skills skill={'Node Js'} progress={'80%'} width={'80%'} />
+          <Skills skill={'Python'} progress={'90%'} width={'90%'} />
+          <Skills skill={'Lua'} progress={'40%'} width={'40%'} />
+          <Skills skill={'Java'} progress={'80%'} width={'80%'} />
+          <Skills skill={'Web Design'} progress={'25%'} width={'25%'} />
+        </div>
+      </div>
     </div>
   )
 }

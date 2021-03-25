@@ -1,5 +1,4 @@
 import amazonClone from '../../images/amazon.jpg';
-import Alan from '../../images/alan.jpg';
 import Zoom from '../../images/zoom.png';
 import Roster from '../../images/roster.jpg';
 import Covid from '../../images/covid.jpg';
