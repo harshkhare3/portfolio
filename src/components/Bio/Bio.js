@@ -9,7 +9,7 @@ import Skills from '../Skills/Skills';
 
 const Bio = () => {
   return (       
-      <div className="bio__container" id='about'>
+    <div className="bio__container" id='about'>
       <Fade duration="2000">
         <div className="bio__heading">
           <h1>ABOUT ME</h1>
@@ -86,19 +86,20 @@ const Bio = () => {
         <div className="bio__skills">
           <h1>MY SKILLS</h1>
           <div className="bio__skillsContainer">
-            <Skills skill={'Javascript'} progress={'60%'} width={'60%'} />
-            <Skills skill={'Typescript'} progress={'30%'} width={'30%'} />
-            <Skills skill={'React Js'} progress={'70%'} width={'70%'} />
+            <Skills skill={'Javascript'} progress={'90%'} width={'90%'} />
+            <Skills skill={'C++'} progress={'70%'} width={'70%'} />
+            <Skills skill={'React Js'} progress={'80%'} width={'80%'} />
+            <Skills skill={'Vue Js'} progress={'60%'} width={'60%'} />
+            <Skills skill={'Redux'} progress={'70%'} width={'70%'} />
             <Skills skill={'Node Js'} progress={'80%'} width={'80%'} />
-            <Skills skill={'Python'} progress={'90%'} width={'90%'} />
-            <Skills skill={'Lua'} progress={'40%'} width={'40%'} />
-            <Skills skill={'Java'} progress={'80%'} width={'80%'} />
-            <Skills skill={'Web Design'} progress={'25%'} width={'25%'} />
+            <Skills skill={'Flutter'} progress={'50%'} width={'50%'} />
+            <Skills skill={'MongoDB'} progress={'80%'} width={'80%'} />
+            <Skills skill={'MySQL'} progress={'80%'} width={'80%'} />
+            <Skills skill={'Firebase'} progress={'70%'} width={'70%'} />
           </div>
         </div>
       </Fade>
-    </div>
-    
+    </div>   
   )
 }
 
