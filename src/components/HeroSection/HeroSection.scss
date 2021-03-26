@@ -1,11 +1,14 @@
 .herosection__background {
   background: url('../../images/back.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
-  -webkit-transform: translateZ(0); 
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   opacity: 1.1;
+
+  @media screen and (max-width: 1024px) {
+    background-attachment: initial;
+  }
 }
 
 .heroSection__container{
