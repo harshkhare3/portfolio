@@ -1,5 +1,13 @@
+.herosection__background {
+  background: url('../../images/back.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1.1;
+}
+
 .heroSection__container{
-  background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
