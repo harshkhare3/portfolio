@@ -48,11 +48,16 @@
 
   p{
     padding: 0.3rem 0;
+    font-size: 15px;
   }
 }
 
 .bio__rightSection {
   margin-left: 2rem;
+
+  @media screen and (max-width: 418px) {
+    margin-left: 1rem;
+  }
 }
 
 .bio__button {

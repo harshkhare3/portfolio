@@ -9,7 +9,6 @@ const LinkScroll = (props) => {
       spy={true}
       exact="true"
       activeClass="active"
-      offset={-80}
       duration={500}
     >
       {props.name}
