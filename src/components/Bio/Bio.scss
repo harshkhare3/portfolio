@@ -48,16 +48,11 @@
 
   p{
     padding: 0.3rem 0;
-    font-size: 15px;
   }
 }
 
 .bio__rightSection {
   margin-left: 2rem;
-
-  @media screen and (max-width: 418px) {
-    margin-left: 1rem;
-  }
 }
 
 .bio__button {
@@ -179,5 +174,19 @@
 
   .bio__skillsContainer {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .bio__details {
+    justify-content: flex-start;
+    margin-left:-10px;
+    p{
+      font-size: 15px;
+    }
+  }
+
+  .bio__rightSection {
+    margin-left: 1px;
   }
 }
