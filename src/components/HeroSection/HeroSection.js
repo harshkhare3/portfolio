@@ -33,7 +33,6 @@ const HeroSection = () => {
               smooth={true} 
               spy={true}
               exact="true"
-              offset={-80}
               duration={500}
               className="headerSection__button" 
               onMouseEnter={onHover} onMouseLeave={onHover}

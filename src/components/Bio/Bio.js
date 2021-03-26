@@ -5,6 +5,8 @@ import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
 import {Fade} from 'react-awesome-reveal';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiJavascript, SiCplusplus, SiReact, SiVueDotJs, SiRedux, SiNodeDotJs, SiFlutter, SiMongodb, SiFirebase } from 'react-icons/si';
+
 import Skills from '../Skills/Skills';
 
 const Bio = () => {
@@ -86,16 +88,16 @@ const Bio = () => {
         <div className="bio__skills">
           <h1>MY SKILLS</h1>
           <div className="bio__skillsContainer">
-            <Skills skill={'Javascript'} progress={'90%'} width={'90%'} />
-            <Skills skill={'C++'} progress={'70%'} width={'70%'} />
-            <Skills skill={'React Js'} progress={'80%'} width={'80%'} />
-            <Skills skill={'Vue Js'} progress={'60%'} width={'60%'} />
-            <Skills skill={'Redux'} progress={'70%'} width={'70%'} />
-            <Skills skill={'Node Js'} progress={'80%'} width={'80%'} />
-            <Skills skill={'Flutter'} progress={'50%'} width={'50%'} />
-            <Skills skill={'MongoDB'} progress={'80%'} width={'80%'} />
-            <Skills skill={'MySQL'} progress={'80%'} width={'80%'} />
-            <Skills skill={'Firebase'} progress={'70%'} width={'70%'} />
+            <Skills skill={'Javascript'} progress={'90%'} width={'90%'} icon={<SiJavascript color="#F7DF1E"/>}/>
+            <Skills skill={'C++'} progress={'70%'} width={'70%'} icon={<SiCplusplus color="#6295CB"/>}/>
+            <Skills skill={'React Js'} progress={'80%'} width={'80%'} icon={<SiReact color="#5ED3F3"/>}/>
+            <Skills skill={'Vue Js'} progress={'60%'} width={'60%'} icon={<SiVueDotJs color="#3FB27F"/>}/>
+            <Skills skill={'Redux'} progress={'70%'} width={'70%'} icon={<SiRedux color="#7248B6" />}/>
+            <Skills skill={'Node Js'} progress={'80%'} width={'80%'} icon={<SiNodeDotJs color="#57A646"/>}/>
+            <Skills skill={'Flutter'} progress={'50%'} width={'50%'} icon={<SiFlutter color="#43CAF5"/>}/>
+            <Skills skill={'MongoDB'} progress={'80%'} width={'80%'} icon={<SiMongodb color="#50AE3F"/>}/>
+            {/* <Skills skill={'MySQL'} progress={'80%'} width={'80%'}/> */}
+            <Skills skill={'Firebase'} progress={'70%'} width={'70%'} icon={<SiFirebase color="#FFCB2B"/>}/>
           </div>
         </div>
       </Fade>

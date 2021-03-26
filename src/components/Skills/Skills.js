@@ -1,10 +1,10 @@
 import React from 'react';
 import './Skills.scss';
 
-const Skills = ({skill, progress, width}) => {
+const Skills = ({skill, progress, width, icon}) => {
   return (
     <div className="skills__container">
-      <h5 className="skills__title">{skill}</h5>
+      <h5 className="skills__title">{skill} &nbsp; {icon}</h5>
       <div className="sills__bar">
         <p className="skills__text">{progress}</p>
         <div className="skills__progress">
