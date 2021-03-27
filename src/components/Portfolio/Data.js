@@ -18,7 +18,8 @@ export const WebApp = [
         <li>Orders page to show previously placed orders.</li>
         <li>Fully functional stripe payment method integrated (currently running on test keys).</li>
       </ul>`,
-      tech:`<p>Tech Used - ReactJs, React Context API & Firebase.</p>`
+      tech:`<p>Tech Used - ReactJs, React Context API & Firebase.</p>`,
+      link: 'https://app-93a48.web.app/'
     },
     {
       name: "Roster Project",
@@ -33,7 +34,8 @@ export const WebApp = [
         <li>Managers can easily set a roster acording to employees availability.</li>
       </ul>
       `,
-      tech: `<p>Tech Used - JavaScript, VueJs, NodeJs & MySQL.</p>`
+      tech: `<p>Tech Used - JavaScript, VueJs, NodeJs & MySQL.</p>`,
+      link: 'https://rosterapp1.herokuapp.com/'
     },
     {
       name: "COVID-19 Tracker App",
@@ -47,20 +49,23 @@ export const WebApp = [
         <li>All the data is shown graphically, and on map according to the country.</li>
       </ul>
       `,
-      tech: `<p>Tech Used - ReactJs</p>`
+      tech: `<p>Tech Used - ReactJs</p>`,
+      link: 'https://covid19-trackerapp-react.herokuapp.com/'
     },
     {
       name: "Zoom Flutter Clone",
       imageUrl: Zoom,
       id: 2,
       data: ``,
-      tech: `<p>Tech Used - Flutter & Firebase.</p>`
+      tech: `<p>Tech Used - Flutter & Firebase.</p>`,
+      link: 'https://play.google.com/store/apps/details?id=com.Harsh.zoom'
     },
     {
       name: "Firebase CHat App",
       imageUrl: Zoom,
       id: 2,
       data: ``,
-      tech: `<p>Tech Used - Flutter & Jitsi Meet.</p>`
+      tech: `<p>Tech Used - Flutter & Jitsi Meet.</p>`,
+      link: 'https://app-93a48.web.app/'
     }
   ]

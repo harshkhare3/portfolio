@@ -6,7 +6,6 @@ import './Bio.scss';
 import {Fade} from 'react-awesome-reveal';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { SiJavascript, SiCplusplus, SiReact, SiVueDotJs, SiRedux, SiNodeDotJs, SiFlutter, SiMongodb, SiFirebase } from 'react-icons/si';
-
 import Skills from '../Skills/Skills';
 
 const Bio = () => {

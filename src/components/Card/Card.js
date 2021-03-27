@@ -10,11 +10,9 @@ import { IoReturnUpBackOutline } from 'react-icons/io5';
 import DOMPurify from 'dompurify';
 import ReactCardFlip from 'react-card-flip';
 
-
-
 import './Card.scss'
 
-const Card = ({ name, imageUrl, data, tech }) => {
+const Card = ({ name, imageUrl, data, tech, link }) => {
   var cleanData = DOMPurify.sanitize(data);
 
   const [open, setOpen] = useState(false);
@@ -26,9 +24,10 @@ const Card = ({ name, imageUrl, data, tech }) => {
   return (
     <div>
       <ReactCardFlip flipSpeedFrontToBack="1.5" flipSpeedBackToFront="1.5" isFlipped={open} flipDirection="horizontal">
-        <CardUi className="card__container">
+        <CardUi className="card__container" >
           <CardActionArea>
             <CardMedia
+              onClick={() => window.open(link, '_blank')} 
               className="card__media"
               image={imageUrl}
             />

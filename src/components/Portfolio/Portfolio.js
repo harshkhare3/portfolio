@@ -58,6 +58,7 @@ const Portfolio = () => {
                  imageUrl={app.imageUrl} 
                  data={app.data} 
                  tech={app.tech}
+                 link={app.link}
                 />
               ))
             : projectType ===1 ?
@@ -67,6 +68,7 @@ const Portfolio = () => {
                  imageUrl={app.imageUrl} 
                  data={app.data}
                  tech={app.tech}
+                 link={app.link}
                 />
               ))
             :
@@ -76,6 +78,7 @@ const Portfolio = () => {
                  imageUrl={app.imageUrl} 
                  data={app.data}
                  tech={app.tech}
+                 link={app.link}
                 />
               )) 
           }        
