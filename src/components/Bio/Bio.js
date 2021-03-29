@@ -77,6 +77,7 @@ const Bio = () => {
                 offset={-80}
                 duration={500}
                 className="bio__button"
+                onClick={() => window.open('https://drive.google.com/file/d/1Urcb0Mc7xMSvWUi6vxaNrp82I4KmpXZM/view?usp=sharing')}
               >
                 Download CV
                 <BsDownload className="bio__buttonIcon"/>
