@@ -24,17 +24,17 @@
 }
 
 .card__backContent {
-  height: 340px;
+  height: 355px;
   width: 400px;
   transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 1350px) {
-    height: 290px;
+    height: 320px;
     width: 350px;
   }
 
   @media screen and (max-width: 1075px) {
-    height: 240px;
+    height: 270px;
     width: 300px;
   }
 

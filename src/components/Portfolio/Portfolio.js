@@ -60,6 +60,7 @@ const Portfolio = () => {
                  data={app.data} 
                  tech={app.tech}
                  link={app.link}
+                 gitLink={app.gitLink}
                 />
               ))
             : projectType ===1 ?
@@ -71,6 +72,7 @@ const Portfolio = () => {
                  data={app.data}
                  tech={app.tech}
                  link={app.link}
+                 gitLink={app.gitLink}
                 />
               ))
             :
@@ -82,6 +84,7 @@ const Portfolio = () => {
                  data={app.data}
                  tech={app.tech}
                  link={app.link}
+                 gitLink={app.gitLink}
                 />
               )) 
           }        

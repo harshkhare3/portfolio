@@ -19,7 +19,8 @@ export const WebApp = [
         <li>Fully functional stripe payment method integrated (currently running on test keys).</li>
       </ul>`,
       tech:`<p>Tech Used - ReactJs, React Context API & Firebase.</p>`,
-      link: 'https://app-93a48.web.app/'
+      link: 'https://app-93a48.web.app/',
+      gitLink: ''
     },
     {
       name: "Roster Project",
@@ -35,7 +36,8 @@ export const WebApp = [
       </ul>
       `,
       tech: `<p>Tech Used - JavaScript, VueJs, NodeJs & MySQL.</p>`,
-      link: 'https://rosterapp1.herokuapp.com/'
+      link: 'https://rosterapp1.herokuapp.com/',
+      gitLink: 'https://github.com/harshkhare3/RosterApp'
     },
     {
       name: "COVID-19 Tracker App",
@@ -50,7 +52,8 @@ export const WebApp = [
       </ul>
       `,
       tech: `<p>Tech Used - ReactJs</p>`,
-      link: 'https://covid19-trackerapp-react.herokuapp.com/'
+      link: 'https://covid19-trackerapp-react.herokuapp.com/',
+      gitLink: 'https://github.com/harshkhare3/covid19-react-app'
     },
     {
       name: "Zoom Flutter Clone",
@@ -58,7 +61,8 @@ export const WebApp = [
       id: 2,
       data: ``,
       tech: `<p>Tech Used - Flutter & Firebase.</p>`,
-      link: 'https://play.google.com/store/apps/details?id=com.Harsh.zoom'
+      link: 'https://play.google.com/store/apps/details?id=com.Harsh.zoom',
+      gitLink: ''
     },
     {
       name: "Firebase CHat App",
@@ -66,6 +70,7 @@ export const WebApp = [
       id: 2,
       data: ``,
       tech: `<p>Tech Used - Flutter & Jitsi Meet.</p>`,
-      link: 'https://app-93a48.web.app/'
+      link: 'https://app-93a48.web.app/',
+      gitLink: ''
     }
   ]
