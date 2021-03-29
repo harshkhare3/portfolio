@@ -54,6 +54,7 @@ const Portfolio = () => {
             projectType === 0 ? 
               WebApp.map((app) => (
                 <Card
+                 key={app.id + Math.random()}
                  name={app.name} 
                  imageUrl={app.imageUrl} 
                  data={app.data} 
@@ -64,6 +65,7 @@ const Portfolio = () => {
             : projectType ===1 ?
               WebApp.filter(app => app.id === 1).map((app) => (
                 <Card
+                 key={app.id + Math.random()}
                  name={app.name} 
                  imageUrl={app.imageUrl} 
                  data={app.data}
@@ -74,6 +76,7 @@ const Portfolio = () => {
             :
               WebApp.filter(app => app.id === 2).map((app) => (
                 <Card 
+                 key={app.id + Math.random()}
                  name={app.name} 
                  imageUrl={app.imageUrl} 
                  data={app.data}

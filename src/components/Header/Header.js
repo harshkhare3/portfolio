@@ -22,7 +22,7 @@ function Header(props) {
   }, []);
 
   return (
-    <Headroom disableInlineStyles="true">
+    <Headroom disableInlineStyles={true}>
       <div className={scrollNav === true ? "header__nav" : "header__nav"} >
         <div className="header__container">
           <Link

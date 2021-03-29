@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState }from 'react'
 import DP from '../../images/dp.jfif';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { Link as LinkS} from 'react-scroll';
 import { BsDownload } from 'react-icons/bs';
 import './Bio.scss';
 import {Fade} from 'react-awesome-reveal';
@@ -9,6 +10,7 @@ import { SiJavascript, SiCplusplus, SiReact, SiVueDotJs, SiRedux, SiNodeDotJs, S
 import Skills from '../Skills/Skills';
 
 const Bio = () => {
+  const [visible, setVisible] = useState(false);
   return (       
     <div className="bio__container" id='about'>
       <Fade duration="2000">
@@ -24,7 +26,7 @@ const Bio = () => {
               <Link
                 onClick={() => window.open('https://github.com/harshkhare3', '_blank')}
                 className="bio__socialIcons">
-                  <FaGithub />
+                  <FaGithub color="white"/>
               </Link>
               <Link 
                 onClick={() => window.open('https://www.linkedin.com/in/harsh-khare-a150b6180/', '_blank')} 
@@ -67,7 +69,7 @@ const Bio = () => {
               </div>
             </div> 
             <div>
-              <Link 
+              <LinkS 
                 to="/resume.pdf"
                 smooth={true} 
                 spy={true}
@@ -78,25 +80,25 @@ const Bio = () => {
               >
                 Download CV
                 <BsDownload className="bio__buttonIcon"/>
-              </Link>
+              </LinkS>
             </div>  
           </div>
         </div>
       </Fade>
-      <Fade duration="2000">
+      <Fade duration="2000" onVisibilityChange={()=> {setVisible(!visible)}}>
         <div className="bio__skills">
           <h1>MY SKILLS</h1>
           <div className="bio__skillsContainer">
-            <Skills skill={'Javascript'} progress={'90%'} width={'90%'} icon={<SiJavascript color="#F7DF1E"/>}/>
-            <Skills skill={'C++'} progress={'70%'} width={'70%'} icon={<SiCplusplus color="#6295CB"/>}/>
-            <Skills skill={'React Js'} progress={'80%'} width={'80%'} icon={<SiReact color="#5ED3F3"/>}/>
-            <Skills skill={'Vue Js'} progress={'60%'} width={'60%'} icon={<SiVueDotJs color="#3FB27F"/>}/>
-            <Skills skill={'Redux'} progress={'70%'} width={'70%'} icon={<SiRedux color="#7248B6" />}/>
-            <Skills skill={'Node Js'} progress={'80%'} width={'80%'} icon={<SiNodeDotJs color="#57A646"/>}/>
-            <Skills skill={'Flutter'} progress={'50%'} width={'50%'} icon={<SiFlutter color="#43CAF5"/>}/>
-            <Skills skill={'MongoDB'} progress={'80%'} width={'80%'} icon={<SiMongodb color="#50AE3F"/>}/>
+            <Skills skill={'Javascript'} progress={'90%'} width={visible===true ? '0%' : '90%'} icon={<SiJavascript color="#F7DF1E"/>}/>
+            <Skills skill={'C++'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<SiCplusplus color="#6295CB"/>}/>
+            <Skills skill={'React Js'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<SiReact color="#5ED3F3"/>}/>
+            <Skills skill={'Vue Js'} progress={'60%'} width={visible===true ? '0%' : '60%'} icon={<SiVueDotJs color="#3FB27F"/>}/>
+            <Skills skill={'Redux'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<SiRedux color="#7248B6" />}/>
+            <Skills skill={'Node Js'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<SiNodeDotJs color="#57A646"/>}/>
+            <Skills skill={'Flutter'} progress={'50%'} width={visible===true ? '0%' : '50%'} icon={<SiFlutter color="#43CAF5"/>}/>
+            <Skills skill={'MongoDB'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<SiMongodb color="#50AE3F"/>}/>
             {/* <Skills skill={'MySQL'} progress={'80%'} width={'80%'}/> */}
-            <Skills skill={'Firebase'} progress={'70%'} width={'70%'} icon={<SiFirebase color="#FFCB2B"/>}/>
+            <Skills skill={'Firebase'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<SiFirebase color="#FFCB2B"/>}/>
           </div>
         </div>
       </Fade>
