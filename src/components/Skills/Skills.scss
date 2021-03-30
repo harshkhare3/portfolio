@@ -1,11 +1,17 @@
 .skills__title {
   font-size: 1.3rem;
   font-weight: 400;
+}
 
-  svg {
-    vertical-align:middle;
-    font-size:32px;
-  }
+.skills__title > svg {
+  vertical-align:middle;
+  font-size:32px;
+}
+
+.skills__title > img {
+  height:35px;
+  width: auto;
+  vertical-align:middle;
 }
 
 .sills__bar {

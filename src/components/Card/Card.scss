@@ -10,34 +10,12 @@
   height: 300px;
   width: 400px;
   transition: all 0.2s ease-in-out;
-
-  @media screen and (max-width: 1350px) {
-    height: 250px;
-    width: 350px;
-  }
-
-  @media screen and (max-width: 1075px) {
-    height: 200px;
-    width: 300px;
-  }
-
 }
 
 .card__backContent {
   height: 355px;
   width: 400px;
   transition: all 0.2s ease-in-out;
-
-  @media screen and (max-width: 1350px) {
-    height: 320px;
-    width: 350px;
-  }
-
-  @media screen and (max-width: 1075px) {
-    height: 270px;
-    width: 300px;
-  }
-
 }
 
 .card__list {
@@ -48,21 +26,6 @@
   width: 400px;
   font-weight: 520 !important;
   color: #010606 !important;
-
-  @media screen and (max-width: 1350px) {
-    width: 350px;
-  }
-
-  @media screen and (max-width: 1075px) {
-    width: 300px;
-  }
-
-}
-
-.scrollable{
-  @media screen and (max-width: 1350px) {
-    overflow-y: scroll !important;
-  }
 }
 
 .card__media > img {
@@ -74,3 +37,42 @@
   padding: 10px;
 }
 
+@media screen and (max-width:1350px) {
+  .scrollable {
+    overflow-y: scroll;
+  }
+
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card__frontContent {
+    width: 350px;
+  }
+
+  .card__backContent {
+    height: 320px;
+    width: 350px;
+  }
+
+  .card__media {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .card__frontContent {
+    width: 300px;
+  }
+
+  .card__backContent {
+    height: 270px;
+    width: 300px;
+  }
+
+  .card__media {
+    height: 200px;
+    width: 300px;
+  }
+}
