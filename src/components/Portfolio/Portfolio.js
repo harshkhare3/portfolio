@@ -10,7 +10,7 @@ const Portfolio = () => {
   const [active, setActive] = useState(false);
 
   const changeProjectType = (e) => {
-    if(e===1 || e===2){
+    if(e===2){
       setActive(true)
     }
     else{

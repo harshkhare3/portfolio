@@ -35,7 +35,7 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
               <p dangerouslySetInnerHTML={{__html:tech}}></p>
             </CardContent>
           </CardActionArea>
-          <CardActions>
+          <CardActions style={{ padding:2 }}>
             <IconButton onClick={handleFlip}>
               <HiInformationCircle color="#606BD5" size="30px" />
             </IconButton>
@@ -53,7 +53,7 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
               <span dangerouslySetInnerHTML={{ __html : cleanData }}></span>
             </CardContent>
           </CardActionArea>
-          <CardActions>
+          <CardActions style={{ paddingTop:2 }}>
             <Button onClick={handleFlip} variant="contained" size="small" color="secondary">
               <IoReturnUpBackOutline size="25px"/> &nbsp; Back 
             </Button>
