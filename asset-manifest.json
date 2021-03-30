@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d6a20c56.chunk.css",
-    "main.js": "/portfolio/static/js/main.b8074e84.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b8074e84.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.4301ea8e.chunk.css",
+    "main.js": "/portfolio/static/js/main.b86afe0f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b86afe0f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
-    "static/js/2.f1d407f3.chunk.js": "/portfolio/static/js/2.f1d407f3.chunk.js",
-    "static/js/2.f1d407f3.chunk.js.map": "/portfolio/static/js/2.f1d407f3.chunk.js.map",
+    "static/js/2.0a4785f4.chunk.js": "/portfolio/static/js/2.0a4785f4.chunk.js",
+    "static/js/2.0a4785f4.chunk.js.map": "/portfolio/static/js/2.0a4785f4.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.d6a20c56.chunk.css.map": "/portfolio/static/css/main.d6a20c56.chunk.css.map",
-    "static/js/2.f1d407f3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f1d407f3.chunk.js.LICENSE.txt",
+    "static/css/main.4301ea8e.chunk.css.map": "/portfolio/static/css/main.4301ea8e.chunk.css.map",
+    "static/js/2.0a4785f4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.0a4785f4.chunk.js.LICENSE.txt",
     "static/media/amazon.02ccf905.jpg": "/portfolio/static/media/amazon.02ccf905.jpg",
     "static/media/HeroSection.scss": "/portfolio/static/media/back.9f10f369.jpeg",
+    "static/media/c++.48ad2ff0.svg": "/portfolio/static/media/c++.48ad2ff0.svg",
     "static/media/covid.53ca4e4f.jpg": "/portfolio/static/media/covid.53ca4e4f.jpg",
     "static/media/dp.ee0b999f.jfif": "/portfolio/static/media/dp.ee0b999f.jfif",
+    "static/media/firebase_icon.c55df031.svg": "/portfolio/static/media/firebase_icon.c55df031.svg",
+    "static/media/flutter.04822681.svg": "/portfolio/static/media/flutter.04822681.svg",
+    "static/media/mongodb.3beac5ba.svg": "/portfolio/static/media/mongodb.3beac5ba.svg",
     "static/media/roster.a0e081d4.jpg": "/portfolio/static/media/roster.a0e081d4.jpg",
     "static/media/zoom.cd9001e8.png": "/portfolio/static/media/zoom.cd9001e8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.43d9a0ba.js",
-    "static/js/2.f1d407f3.chunk.js",
-    "static/css/main.d6a20c56.chunk.css",
-    "static/js/main.b8074e84.chunk.js"
+    "static/js/2.0a4785f4.chunk.js",
+    "static/css/main.4301ea8e.chunk.css",
+    "static/js/main.b86afe0f.chunk.js"
   ]
 }
