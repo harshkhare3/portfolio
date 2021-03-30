@@ -20,7 +20,7 @@ export const WebApp = [
       </ul>`,
       tech:`<p>Tech Used - ReactJs, React Context API & Firebase.</p>`,
       link: 'https://app-93a48.web.app/',
-      gitLink: ''
+      gitLink: 'https://github.com/harshkhare3/amazonClone'
     },
     {
       name: "Roster Project",
