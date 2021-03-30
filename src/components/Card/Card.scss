@@ -40,11 +40,12 @@
 @media screen and (max-width:1350px) {
   .scrollable {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar {
+      display: none;
+    }
   }
 
-  .scrollable::-webkit-scrollbar {
-    display: none;
-  }
 
   .card__frontContent {
     width: 350px;
