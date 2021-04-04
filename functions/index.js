@@ -11,7 +11,7 @@ app.use(express.json());
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: "wdcproj2020@gmail.com",
+    user: process.env.SENDER_EMAIL,
     pass: process.env.PASS,
   },
 });
@@ -26,8 +26,8 @@ app.post("/email", (req, res) => {
   const name = req.body.name;
 
   const mailOptions = {
-    from: "wdcproj2020@gmail.com",
-    to: "harshkhare3@gmail.com",
+    from: process.env.SENDER_EMAIL,
+    to: process.env.RECIPIENT_EMAIL,
     subject: "Employer name - " + name + " & email - " + email,
     html: req.body.message,
   };
