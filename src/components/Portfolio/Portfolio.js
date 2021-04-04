@@ -7,20 +7,13 @@ import './Portfolio.scss';
 
 const Portfolio = () => {
   const [projectType, setProjectType] = useState(0);
-  const [active, setActive] = useState(false);
 
   const changeProjectType = (e) => {
-    if(e===2){
-      setActive(true)
-    }
-    else{
-      setActive(false)
-    }
     setProjectType(e);
   }  
 
   return (
-    <div id="portfolio" className={active? "portfolio portfolio__height" : "portfolio"}>
+    <div id="portfolio" className="portfolio">
       <Fade duration="1000">
         <h1>MY PROJECTS</h1>
         <div className="portfolio__button">
