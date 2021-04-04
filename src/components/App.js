@@ -25,8 +25,6 @@ function App() {
         <div className="content">
           <Bio />
           <Portfolio />
-        </div>
-        <div className="contact">
           <Contact />
         </div>
       </div>
