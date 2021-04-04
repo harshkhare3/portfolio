@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import LinkScroll from '../LinkScroll/LinkScroll';
 import './Header.scss';
 import Headroom from 'react-headroom';
+import Logo from '../../images/logo.png';
 
 function Header(props) {
   const [scrollNav, setScrollNav] = useState(false);
@@ -32,7 +33,7 @@ function Header(props) {
             to="home" 
             className="header__logo"
           >
-            Harsh Khare
+            <img src={Logo} alt="Header Logo" />
           </Link>
           
           <div onClick={props.toggle} className="header__mobileIcon">
@@ -41,13 +42,13 @@ function Header(props) {
             
           <ul className="header__navMenu">
             <li className="header__navItem">
-              <LinkScroll to="about" name="About" />
+              <LinkScroll to="about" name="About Me" />
             </li>
             <li className="header__navItem">
-              <LinkScroll to="portfolio" name="Portfolio" />
+              <LinkScroll to="portfolio" name="My Projects" />
             </li>
             <li className="header__navItem">
-              <LinkScroll to="contact" name="Contact Me" />
+              <LinkScroll to="contact" name="Lets Connect" />
             </li>
           </ul>
         </div>

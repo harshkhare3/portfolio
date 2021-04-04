@@ -8,10 +8,10 @@ import {Fade} from 'react-awesome-reveal';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiVueDotJs, SiRedux, SiNodeDotJs } from 'react-icons/si';
 import FirebaseIcon from '../../images/firebase_icon.svg';
-import MongoDb from '../../images/mongodb.svg';
+import MongoDB from '../../images/mongodb.svg';
 import Flutter from '../../images/flutter.svg';
 import Cplusplus from '../../images/c++.svg';
-import Skills from '../Skills/Skills';
+import ReactTooltip from 'react-tooltip';
 
 const Bio = () => {
   const [visible, setVisible] = useState(false);
@@ -94,19 +94,64 @@ const Bio = () => {
         <div className="bio__skills">
           <h1>MY SKILLS</h1>
           <div className="bio__skillsContainer">
-            <Skills skill={'Javascript'} progress={'90%'} width={visible===true ? '0%' : '90%'} icon={<SiJavascript color="#F7DF1E"/>}/>
-            <Skills skill={'C++'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<img alt="" src={Cplusplus}/>}/>
-            <Skills skill={'React Js'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<SiReact color="#5ED3F3"/>}/>
-            <Skills skill={'Vue Js'} progress={'60%'} width={visible===true ? '0%' : '60%'} icon={<SiVueDotJs color="#3FB27F"/>}/>
-            <Skills skill={'Redux'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<SiRedux color="#7248B6" />}/>
-            <Skills skill={'Node Js'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<SiNodeDotJs color="#57A646"/>}/>
-            <Skills skill={'Flutter'} progress={'50%'} width={visible===true ? '0%' : '50%'} icon={<img alt="" src={Flutter} />}/>
-            <Skills skill={'MongoDB'} progress={'80%'} width={visible===true ? '0%' : '80%'} icon={<img alt="" src={MongoDb} />}/>
-            {/* <Skills skill={'MySQL'} progress={'80%'} width={'80%'}/> */}
-            <Skills skill={'Firebase'} progress={'70%'} width={visible===true ? '0%' : '70%'} icon={<img alt="" src={FirebaseIcon} />}/>
+            <SiJavascript
+              onClick={()=> window.open('https://www.javascript.com/')} 
+              data-tip="JavaScript" 
+              color="#F7DF1E"
+            />
+            <img 
+              onClick={()=> window.open('https://www.cplusplus.com/')} 
+              alt="C++" 
+              data-tip="C++" s
+              src={Cplusplus}
+            />
+            <SiReact
+              onClick={()=> window.open('https://reactjs.org/')}
+              data-tip="React Js" 
+              color="#5ED3F3"
+            />
+            <SiVueDotJs 
+              onClick={()=> window.open('https://vuejs.org/')}
+              data-tip="Vue Js" 
+              color="#3FB27F"
+            />
+            <SiRedux 
+              onClick={()=> window.open('https://redux.js.org/')}
+              data-tip="Redux" 
+              color="#7248B6" 
+            />
+            <SiNodeDotJs 
+              onClick={()=> window.open('https://nodejs.org/en/')}
+              data-tip="Node Js" 
+              color="#57A646"
+            />
+            <img 
+              alt="Flutter" 
+              onClick={()=> window.open('https://flutter.dev/')}
+              data-tip="Flutter" 
+              src={Flutter} 
+            />
+            <img 
+              alt="MongoDB" 
+              onClick={()=> window.open('https://www.mongodb.com/')}
+              data-tip="MongoDB" 
+              src={MongoDB} 
+            />
+            <img 
+              alt="Firebase" 
+              onClick={()=> window.open('https://firebase.google.com/')}
+              data-tip="Firebase" 
+              src={FirebaseIcon} 
+            />
           </div>
         </div>
       </Fade>
+      <ReactTooltip
+        place="top" 
+        backgroundColor="#0062c4" 
+        textColor="white"
+        effect="float"
+      />
     </div>   
   )
 }

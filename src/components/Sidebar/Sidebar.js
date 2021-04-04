@@ -18,13 +18,13 @@ const Sidebar = (props) => {
       <div className="sidebar__wrapper">
         <ul className="sidebar__menu">
           <li className="sidebar__link">
-            <LinkScroll onClick={props.toggle} className="sidebar__link" to="about">About</LinkScroll>
+            <LinkScroll onClick={props.toggle} className="sidebar__link" to="about">About Me</LinkScroll>
           </li>
           <li className="sidebar__link">
-            <LinkScroll onClick={props.toggle} className="sidebar__link" to="portfolio">Portfolio</LinkScroll>
+            <LinkScroll onClick={props.toggle} className="sidebar__link" to="portfolio">My Projects</LinkScroll>
           </li>
           <li className="sidebar__link">
-            <LinkScroll onClick={props.toggle} className="sidebar__link" to="contact">Contact Me</LinkScroll>
+            <LinkScroll onClick={props.toggle} className="sidebar__link" to="contact">Lets Connect</LinkScroll>
           </li>
         </ul>
       </div>

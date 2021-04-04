@@ -22,7 +22,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className={active? "portfolio portfolio__height" : "portfolio"}>
       <Fade duration="1000">
-        <h1>MY PORTFOLIO</h1>
+        <h1>MY PROJECTS</h1>
         <div className="portfolio__button">
           <Button onClick={(e) => changeProjectType(0)}
            variant="contained"

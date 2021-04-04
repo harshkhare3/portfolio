@@ -29,16 +29,18 @@
 }
 
 .header__logo {
-  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   list-style: none;
   text-decoration: none !important;
+}
+
+.header__logo > img {
+  height: 5.5rem;
 }
 
 .header__logo:hover {

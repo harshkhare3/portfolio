@@ -7,13 +7,13 @@
 }
 
 .card__media {
-  height: 300px;
+  height: 270px;
   width: 400px;
   transition: all 0.2s ease-in-out;
 }
 
 .card__backContent {
-  height: 350px;
+  height: 320px;
   width: 400px;
   transition: all 0.2s ease-in-out;
 }
@@ -24,6 +24,7 @@
 
 .card__frontContent {
   width: 400px;
+  padding: 10px !important;
   font-weight: 520 !important;
   color: #010606 !important;
 }

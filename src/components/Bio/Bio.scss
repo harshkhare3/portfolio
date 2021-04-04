@@ -102,13 +102,27 @@
 .bio__skills {
   margin-top: 20px;
 }
+
 .bio__skillsContainer {
-  margin: 4rem 0;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 4rem;
-  row-gap: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bio__skillsContainer > svg {
+  vertical-align:middle;
+  font-size:60px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.bio__skillsContainer > img {
+  height:63px;
+  width: auto;
+  vertical-align:middle;
+  margin: 20px;
+  cursor: pointer;
 }
 
 // Media Queries
@@ -170,10 +184,6 @@
     margin-left: 10px;
     margin-right: 10px;
     line-height: normal;
-  }
-
-  .bio__skillsContainer {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 

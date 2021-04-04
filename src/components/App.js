@@ -7,6 +7,7 @@ import Sidebar from './Sidebar/Sidebar';
 import HeroSection from './HeroSection/HeroSection';
 import Bio from './Bio/Bio';
 import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,6 +25,9 @@ function App() {
         <div className="content">
           <Bio />
           <Portfolio />
+        </div>
+        <div className="contact">
+          <Contact />
         </div>
       </div>
     </Router>
