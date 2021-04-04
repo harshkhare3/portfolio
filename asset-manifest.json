@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a715354a.chunk.css",
+    "main.css": "/portfolio/static/css/main.f48859ee.chunk.css",
     "main.js": "/portfolio/static/js/main.e717f378.chunk.js",
     "main.js.map": "/portfolio/static/js/main.e717f378.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
@@ -10,7 +10,7 @@
     "static/js/2.43058748.chunk.js.map": "/portfolio/static/js/2.43058748.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.539d5a8a.chunk.css.map": "/portfolio/static/css/2.539d5a8a.chunk.css.map",
-    "static/css/main.a715354a.chunk.css.map": "/portfolio/static/css/main.a715354a.chunk.css.map",
+    "static/css/main.f48859ee.chunk.css.map": "/portfolio/static/css/main.f48859ee.chunk.css.map",
     "static/js/2.43058748.chunk.js.LICENSE.txt": "/portfolio/static/js/2.43058748.chunk.js.LICENSE.txt",
     "static/media/amazon.02ccf905.jpg": "/portfolio/static/media/amazon.02ccf905.jpg",
     "static/media/HeroSection.scss": "/portfolio/static/media/back.9f10f369.jpeg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.43d9a0ba.js",
     "static/css/2.539d5a8a.chunk.css",
     "static/js/2.43058748.chunk.js",
-    "static/css/main.a715354a.chunk.css",
+    "static/css/main.f48859ee.chunk.css",
     "static/js/main.e717f378.chunk.js"
   ]
 }
