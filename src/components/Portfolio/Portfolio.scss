@@ -18,10 +18,6 @@
   justify-content: center;
 }
 
-.css-1gzxeik >h1 {
-  left: 10;
-}
-
 .portfolio__height {
   height: 100vh;
 }
@@ -39,6 +35,11 @@
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 380px) {
+  .css-1gzxeik >h1 {
+    margin-left: -45px;
+  }  
+}
 // This class comes from Fade effect
 .css-1gzxeik {
   width: 80%;
