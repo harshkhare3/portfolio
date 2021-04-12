@@ -38,6 +38,12 @@
   padding: 10px;
 }
 
+.card__modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (max-width:1350px) {
   .scrollable {
     overflow-y: scroll;
@@ -76,5 +82,10 @@
   .card__media {
     height: 200px;
     width: 300px;
+  }
+
+  .card__video {
+    width: 426px !important;
+    height: 240px !important;
   }
 }

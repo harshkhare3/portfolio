@@ -7,24 +7,38 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import { HiInformationCircle } from 'react-icons/hi';
 import { IoReturnUpBackOutline } from 'react-icons/io5';
+import { FiExternalLink } from 'react-icons/fi';
 import DOMPurify from 'dompurify';
 import ReactCardFlip from 'react-card-flip';
 import { SiGithub } from 'react-icons/si';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import ReactPlayer from 'react-player/lazy'
 
 import './Card.scss'
 
 const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
   var cleanData = DOMPurify.sanitize(data);
 
-  const [open, setOpen] = useState(false);
+  const [flip, setFlip] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleFlip = () => {
-    setOpen(!open);
+    setFlip(!flip);
   };
 
   return (
     <div>
-      <ReactCardFlip flipSpeedFrontToBack="1.5" flipSpeedBackToFront="1.5" isFlipped={open} flipDirection="horizontal">
+      <ReactCardFlip flipSpeedFrontToBack="1.5" flipSpeedBackToFront="1.5" isFlipped={flip} flipDirection="horizontal">
         <CardUi className="card__container" >
           <CardActionArea>
             <CardMedia
@@ -39,12 +53,14 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
             <IconButton onClick={handleFlip}>
               <HiInformationCircle color="#606BD5" size="30px" />
             </IconButton>
-            <Button onClick={() => window.open(link, '_blank')} variant="contained" color="primary" size="small" >
-              View Project 
+            <IconButton onClick={() => window.open(link, '_blank')} >
+              <FiExternalLink />
+            </IconButton>
+            <Button onClick={handleOpen} variant="contained" color="primary" size="small">
+              HOW TO USE?
             </Button>
           </CardActions>
         </CardUi>
-
 
         <CardUi className="card__container">
           <CardActionArea>
@@ -63,6 +79,21 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
           </CardActions>
         </CardUi>
       </ReactCardFlip>
+
+      <Modal
+        className="card__modal"
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 300,
+        }}
+      >
+        <Fade in={open}>
+          <ReactPlayer url='https://www.youtube.com/watch?v=Cwief8GflTU' controls="true" className="card__video"/>
+        </Fade>
+      </Modal>
     </div>
   )
 }

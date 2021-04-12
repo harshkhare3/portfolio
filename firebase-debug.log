@@ -1,0 +1,31 @@
+[debug] [2021-04-12T06:13:11.726Z] ----------------------------------------------------------------------
+[debug] [2021-04-12T06:13:11.728Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2021-04-12T06:13:11.728Z] CLI Version:   9.5.0
+[debug] [2021-04-12T06:13:11.728Z] Platform:      win32
+[debug] [2021-04-12T06:13:11.728Z] Node Version:  v12.19.0
+[debug] [2021-04-12T06:13:11.730Z] Time:          Mon Apr 12 2021 11:43:11 GMT+0530 (India Standard Time)
+[debug] [2021-04-12T06:13:11.730Z] ----------------------------------------------------------------------
+[debug] [2021-04-12T06:13:11.730Z] 
+[debug] [2021-04-12T06:13:11.736Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-12T06:13:11.737Z] > authorizing via signed-in user
+[debug] [2021-04-12T06:13:11.737Z] [iam] checking project portfolio-cd117 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-04-12T06:13:11.739Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-cd117:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2021-04-12T06:13:13.077Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 12 Apr 2021 06:13:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1156","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-12T06:13:13.078Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/portfolio-cd117/serviceAccounts/portfolio-cd117@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-04-12T06:13:14.545Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 12 Apr 2021 06:13:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'portfolio-cd117'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2021-04-12T06:13:19.942Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-cd117/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2021-04-12T06:13:19.942Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-cd117/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-04-12T06:13:19.942Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-cd117/services/cloudbuild.googleapis.com  
+ 
