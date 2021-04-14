@@ -45,7 +45,7 @@ const Contact = () => {
           <p>If you want to know more about me or my work, or if you would just like to say hello, send me a message. I'd love to hear from you.</p>
           <br/>
           <Card>
-            <CardContent class="contact__card">
+            <CardContent className="contact__card">
               <TextField
                 className="contact__field"
                 label="Name"

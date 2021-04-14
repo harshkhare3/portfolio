@@ -1,7 +1,6 @@
 import React, { useState }from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header/Header';
-
 import './App.scss';
 import Sidebar from './Sidebar/Sidebar';
 import HeroSection from './HeroSection/HeroSection';

@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React from 'react'
 import DP from '../../images/dp.jfif';
 import { Link } from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
@@ -14,7 +14,6 @@ import Cplusplus from '../../images/c++.svg';
 import ReactTooltip from 'react-tooltip';
 
 const Bio = () => {
-  const [visible, setVisible] = useState(false);
   return (       
     <div className="bio__container" id='about'>
       <Fade duration="2000">
@@ -28,17 +27,17 @@ const Bio = () => {
             <img src={DP} alt="Profile Pic" className="bio__dp"/>
             <div className="bio__social">
               <Link
-                onClick={() => window.open('https://github.com/harshkhare3', '_blank')}
+                to={() => window.open('https://github.com/harshkhare3', '_blank')}
                 className="bio__socialIcons">
                   <FaGithub color="white"/>
               </Link>
               <Link 
-                onClick={() => window.open('https://www.linkedin.com/in/harsh-khare-a150b6180/', '_blank')} 
+                to={() => window.open('https://www.linkedin.com/in/harsh-khare-a150b6180/', '_blank')} 
                 className="bio__socialIcons">
                   <FaLinkedin color="#0A66C2"/>
               </Link>
               <Link 
-                onClick={() => window.open('https://twitter.com/JoninHK', '_blank')}
+                to={() => window.open('https://twitter.com/JoninHK', '_blank')}
                 className="bio__socialIcons">
                   <FaTwitter color="#1DA1F2"/>
               </Link>
@@ -90,7 +89,7 @@ const Bio = () => {
           </div>
         </div>
       </Fade>
-      <Fade duration="2000" onVisibilityChange={()=> {setVisible(!visible)}}>
+      <Fade duration="2000">
         <div className="bio__skills">
           <h1>MY SKILLS</h1>
           <div className="bio__skillsContainer">

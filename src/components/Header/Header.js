@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import LinkScroll from '../LinkScroll/LinkScroll';
+import LinkScroll from './LinkScroll/LinkScroll';
 import './Header.scss';
 import Headroom from 'react-headroom';
 import Logo from '../../images/logo.png';

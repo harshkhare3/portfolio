@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Card from '../Card/Card';
+import Card from './Card/Card';
 import {Fade} from 'react-awesome-reveal';
 import Button from '@material-ui/core/Button';
 import { WebApp } from './Data';

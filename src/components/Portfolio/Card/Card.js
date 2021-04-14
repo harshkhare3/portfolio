@@ -73,8 +73,8 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
             <Button onClick={handleFlip} variant="contained" size="small" color="secondary">
               <IoReturnUpBackOutline size="25px"/> &nbsp; Back 
             </Button>
-            <IconButton size="medium">
-              <SiGithub onClick={() => window.open(gitLink, '_blank')} color="black"/>
+            <IconButton onClick={() => window.open(gitLink, '_blank')} size="medium">
+              <SiGithub color="black"/>
             </IconButton>
           </CardActions>
         </CardUi>
@@ -91,7 +91,7 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
         }}
       >
         <Fade in={open}>
-          <ReactPlayer url='https://www.youtube.com/watch?v=Cwief8GflTU' controls="true" className="card__video"/>
+          <ReactPlayer url='https://www.youtube.com/watch?v=Cwief8GflTU' controls={true} className="card__video"/>
         </Fade>
       </Modal>
     </div>
