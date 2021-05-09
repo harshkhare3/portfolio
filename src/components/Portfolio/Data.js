@@ -65,15 +65,6 @@ export const WebApp = [
       gitLink: ''
     },
     {
-      name: "Firebase CHat App",
-      imageUrl: Zoom,
-      id: 2,
-      data: ``,
-      tech: `<p>Tech Used - Flutter & Jitsi Meet.</p>`,
-      link: 'https://app-93a48.web.app/',
-      gitLink: ''
-    },
-    {
       name: "WhatsApp Clone",
       imageUrl: WhatsApp,
       id: 1,
