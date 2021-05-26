@@ -26,7 +26,7 @@
   object-fit: contain;
 }
 
-.bio__content { 
+.bio__content {
   display: flex;
   flex-direction: column;
   margin-left: 6rem;
@@ -38,15 +38,14 @@
   font-size: 1.6rem;
 }
 
-.bio__content > p{
+.bio__content > p {
   padding: 1rem 0;
-  
 }
 
 .bio__details {
   display: flex;
 
-  p{
+  p {
     padding: 0.3rem 0;
   }
 }
@@ -60,7 +59,7 @@
   justify-content: center;
   margin-top: 3rem;
   border-radius: 50px;
-  background: #01BF71;
+  background: #01bf71;
   white-space: nowrap;
   outline: none;
   padding: 14px 48px;
@@ -94,7 +93,7 @@
   font-size: 30px;
   cursor: pointer;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 15px;
   }
 }
@@ -111,16 +110,16 @@
 }
 
 .bio__skillsContainer > svg {
-  vertical-align:middle;
-  font-size:60px;
+  vertical-align: middle;
+  font-size: 60px;
   margin: 20px;
   cursor: pointer;
 }
 
 .bio__skillsContainer > img {
-  height:63px;
+  height: 63px;
   width: auto;
-  vertical-align:middle;
+  vertical-align: middle;
   margin: 20px;
   cursor: pointer;
 }
@@ -139,13 +138,13 @@
   }
 }
 
-@media screen and (max-width: 930px) { 
+@media screen and (max-width: 930px) {
   .bio__container {
     padding: 20px 0;
-    margin:0 10px;  
+    margin: 0 10px;
   }
 
-  .bio__heading{
+  .bio__heading {
     margin-top: -1rem;
   }
 
@@ -170,7 +169,7 @@
     line-height: normal;
   }
 
-  .bio__skills {    
+  .bio__skills {
     margin: 2rem 2rem;
   }
 
@@ -190,8 +189,8 @@
 @media screen and (max-width: 418px) {
   .bio__details {
     justify-content: flex-start;
-    margin-left:-10px;
-    p{
+    margin-left: -10px;
+    p {
       font-size: 15px;
     }
   }

@@ -1,5 +1,5 @@
 .header__nav {
-  background:#181818;
+  background: #181818;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,14 +8,14 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
 }
 
-.nav__bg{
-  background: transparent; 
+.nav__bg {
+  background: transparent;
 }
 
 .header__container {
@@ -49,7 +49,7 @@
 
 .header__mobileIcon {
   display: none;
-  
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -58,7 +58,7 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff
+    color: #fff;
   }
 }
 
@@ -85,7 +85,7 @@
 
 .header__navItem > .active {
   padding-bottom: 5px;
-  color:#01bf71;
+  color: #01bf71;
   font-weight: bold;
   text-decoration: none !important;
 }

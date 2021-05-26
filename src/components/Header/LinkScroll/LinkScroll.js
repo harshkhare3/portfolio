@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'react-scroll';
+import React from "react"
+import { Link } from "react-scroll"
 
 const LinkScroll = (props) => {
   return (
     <Link
-      smooth={true} 
+      smooth={true}
       to={props.to}
       spy={true}
       exact="true"
