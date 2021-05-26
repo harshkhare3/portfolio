@@ -48,8 +48,8 @@ const Bio = () => {
             <h4>My name is <span style={{ color: '#01BF71'}}>Harsh Khare</span></h4>
 
             <p> I am a final-year Computer Science student at The University of Adelaide <br/>
-              currently persuing CyberSecurity as major. I am a MERN stack developer with <br/>
-              experience in web development.
+              currently persuing CyberSecurity as major. I am a Full-Stack developer with <br/>
+              experience in web and app development.
               <br /> <br />
               I am also proficient in Object Oriented Programming (C++) and <br />
               Algorithms & Data Structures.
@@ -58,16 +58,12 @@ const Bio = () => {
             <div className="bio__details">
               <div className="bio__leftSection">
                 <p>Full Name</p>
-                <p>Age</p>
                 <p>Email</p>
-                <p>Address</p>
                 <p>Phone Number</p>
               </div>
               <div className="bio__rightSection">
                 <p>: Harsh Khare</p>
-                <p>: 20</p>
                 <p>: harshkhare3@gmail.com</p>
-                <p>: 456 Grand Junction Road</p>
                 <p>: +61-470450393</p>
               </div>
             </div> 
