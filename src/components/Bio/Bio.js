@@ -101,7 +101,7 @@ const Bio = () => {
                 className="bio__button"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1Urcb0Mc7xMSvWUi6vxaNrp82I4KmpXZM/view?usp=sharing"
+                    "https://drive.google.com/file/d/1MB05no4indMcKYRLgc1rPgvYepzRK6OZ/view?usp=sharing"
                   )
                 }
               >
