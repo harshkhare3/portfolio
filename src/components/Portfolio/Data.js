@@ -2,7 +2,6 @@ import amazonClone from "../../images/amazon.jpg"
 import Zoom from "../../images/zoom.png"
 import Roster from "../../images/roster.jpg"
 import Covid from "../../images/covid.jpg"
-import WhatsApp from "../../images/whatsapp.jpg"
 
 export const WebApp = [
   {
@@ -63,14 +62,5 @@ export const WebApp = [
     tech: `<p>Tech Used - Flutter & Firebase.</p>`,
     link: "https://play.google.com/store/apps/details?id=com.Harsh.zoom",
     gitLink: "",
-  },
-  {
-    name: "WhatsApp Clone",
-    imageUrl: WhatsApp,
-    id: 1,
-    data: ``,
-    tech: `<p>Tech Used - React, NextJs & Firebase.</p>`,
-    link: "https://whatsapp-nextjs-five.vercel.app/",
-    gitLink: "https://github.com/harshkhare3/whatsapp-nextjs",
   },
 ]
