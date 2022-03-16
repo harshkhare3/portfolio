@@ -18,7 +18,7 @@ import ReactPlayer from "react-player/lazy"
 
 import "./Card.scss"
 
-const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
+const Card = ({ name, imageUrl, data, tech, link, gitLink, videoUrl }) => {
   var cleanData = DOMPurify.sanitize(data)
 
   const [flip, setFlip] = useState(false)
@@ -107,7 +107,7 @@ const Card = ({ name, imageUrl, data, tech, link, gitLink }) => {
       >
         <Fade in={open}>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=Cwief8GflTU"
+            url={videoUrl}
             controls={true}
             className="card__video"
           />

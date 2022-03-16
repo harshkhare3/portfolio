@@ -67,6 +67,7 @@ const Portfolio = () => {
                   tech={app.tech}
                   link={app.link}
                   gitLink={app.gitLink}
+                  videoUrl={app.videoUrl}
                 />
               ))
             : projectType === 1
