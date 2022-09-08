@@ -1,6 +1,5 @@
 import React from "react"
 import DP from "../../images/dp.jfif"
-import { Link } from "react-router-dom"
 import { Link as LinkS } from "react-scroll"
 import { BsDownload } from "react-icons/bs"
 import "./Bio.scss"
