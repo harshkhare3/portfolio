@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Card from "./Card/Card"
 import { Fade } from "react-awesome-reveal"
 import Button from "@material-ui/core/Button"
-import { DataGridPro } from '@mui/x-data-grid';
 import { WebApp } from "./Data"
 import "./Portfolio.scss"
 
