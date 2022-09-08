@@ -20,6 +20,7 @@ export const WebApp = [
     tech: `<p>Tech Used - ReactJs, React Context API & Firebase.</p>`,
     link: "https://app-93a48.web.app/",
     gitLink: "https://github.com/harshkhare3/amazonClone",
+    videoUrl: "https://youtu.be/oGibpykI_3M"
   },
   {
     name: "Roster Project",
@@ -37,6 +38,7 @@ export const WebApp = [
     tech: `<p>Tech Used - JavaScript, VueJs, NodeJs & MySQL.</p>`,
     link: "https://rosterapp1.herokuapp.com/",
     gitLink: "https://github.com/harshkhare3/RosterApp",
+    videoUrl: "https://youtu.be/w2f2TntHUxY"
   },
   {
     name: "COVID-19 Tracker App",
@@ -53,6 +55,7 @@ export const WebApp = [
     tech: `<p>Tech Used - ReactJs</p>`,
     link: "https://covid19-trackerapp-react.herokuapp.com/",
     gitLink: "https://github.com/harshkhare3/covid19-react-app",
+    videoUrl: "https://youtu.be/hW8As2basIM"
   },
   {
     name: "Zoom Flutter Clone",
@@ -62,5 +65,6 @@ export const WebApp = [
     tech: `<p>Tech Used - Flutter & Firebase.</p>`,
     link: "https://play.google.com/store/apps/details?id=com.Harsh.zoom",
     gitLink: "",
+    videoUrl: "https://drive.google.com/file/d/1hu-lZ7yzMeQ-dcsv1YFyz1jzPZhJ7m2d/view?usp=sharing"
   },
 ]

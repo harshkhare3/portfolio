@@ -87,7 +87,7 @@ const Bio = () => {
               <div className="bio__rightSection">
                 <p>: Harsh Khare</p>
                 <p>: harshkhare3@gmail.com</p>
-                <p>: +61-470450393</p>
+                <p>: +61-450773810</p>
               </div>
             </div>
             <div>
